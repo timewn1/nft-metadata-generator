@@ -23,54 +23,17 @@ const getRandomNumber = () => {
 
 async function start() {
     try {
-        const dataType = {
-            '1': 'space',
-            '2': 'star',
-            '3': 'grey',
-            '4': 'purple',
-            '11': 'and',
-            '12': 'green',
-            '13': 'pink',
-            '14': 'brown',
-            '21': 'gold',
-            '22': 'orange',
-            '23': 'earth',
-            '24': 'eye',
-            '31': 'red',
-            '32': 'white',
-            '33': 'moon',
-            '34': 'cap',
-            '41': 'different',
-            '42': 'dark',
-            '43': 'light',
-            '44': 'bubble',
-            '111': 'face',
-            '112': 'water',
-            '113': 'blue',
-            '114': 'head',
-            '121': 'small',
-            '122': 'black',
-            '123': 'body',
-            '124': 'beautiful',
-            '125': 'reflect',
-            '131': 'glass',
-            '132': 'ice'
-        }
-
         fs.readFile('data.txt', 'utf8', async function (err, data) {
             if (err) {
                 console.log(err);
             }
 
             const contractsDir = "./json/";
-            // console.log(data.split('\r\n'));
             const arrayData = data.split('\r\n');
 
             if (!fs.existsSync(contractsDir)) {
                 fs.mkdirSync(contractsDir);
             }
-
-            console.log(arrayData);
 
             for (let i = 0; i < arrayData.length; i++) {
                 const trait_values = arrayData[i].split(',');
