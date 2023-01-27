@@ -1,0 +1,26 @@
+{
+    "attributes": [
+        {
+            "trait_type": "intelligence",
+            "value": "2"
+        },
+        {
+            "trait_type": "background",
+            "value": "grey"
+        },
+        {
+            "trait_type": "bot colour",
+            "value": "gold"
+        },
+        {
+            "trait_type": "other special",
+            "value": "blue eye"
+        },
+        {
+            "trait_type": "power",
+            "value": "6"
+        }
+    ],
+    "description": "Passive Income Generating NFTs, funds will be invested in yield farming and high frequency trading and profits will be airdropped every month back to NFT holders in Star coins",
+    "name": "YieldBotz #1"
+}
